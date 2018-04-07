@@ -9,6 +9,7 @@ use App\FactoryMethod\Pizza\CheesePizza;
 use App\FactoryMethod\Pizza\PepperoniPizza;
 use App\FactoryMethod\ChicagoStylePizzaStore;
 use App\FactoryMethod\Pizza\NYStyleCheesePizza;
+use App\FactoryMethod\Pizza\ChicagoStyleCheesePizza;
 
 class PizzaStoreTest extends TestCase
 {
@@ -29,6 +30,6 @@ class PizzaStoreTest extends TestCase
 
         $pizza = $pizzaStore->orderPizza('cheese');
 
-        $this->assertInstanceOf(CheesePizza::class, $pizza);
+        $this->assertInstanceOf(ChicagoStyleCheesePizza::class, $pizza);
     }
 }
