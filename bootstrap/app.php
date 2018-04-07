@@ -1,6 +1,5 @@
 <?php
 
-
 function main($arg)
 {
     $arg();
