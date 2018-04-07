@@ -3,8 +3,8 @@
 namespace App\FactoryMethod;
 
 use App\FactoryMethod\Pizza\GreekPizza;
-use App\FactoryMethod\Pizza\CheesePizza;
 use App\FactoryMethod\Pizza\PepperoniPizza;
+use App\FactoryMethod\Pizza\NYStyleCheesePizza;
 
 class NYStylePizzaStore extends PizzaStore
 {
@@ -13,7 +13,7 @@ class NYStylePizzaStore extends PizzaStore
         echo "Creating New York Style Pizza...\n";
 
         if ($type === 'cheese') {
-            $pizza = new CheesePizza();
+            $pizza = new NYStyleCheesePizza();
         } elseif ($type === 'greek') {
             $pizza = new GreekPizza();
         } elseif ($type === 'pepperoni') {
