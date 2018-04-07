@@ -1,6 +1,5 @@
 <?php
 
-use App\SimpleFactory\Main;
 
 function main($arg)
 {
@@ -10,12 +9,15 @@ function main($arg)
 function simpleFactory()
 {
     echo "Simple Factory Idiom\n";
-    (new Main())->run();
+    echo "----------------------\n";
+    (new \App\SimpleFactory\Main())->run();
 }
 
 function factoryMethod()
 {
-    echo 'Factory Method Pattern';
+    echo "Factory Method Pattern\n";
+    echo "----------------------\n";
+    (new \App\FactoryMethod\Main())->run();
 }
 
 function abstractFactory()
