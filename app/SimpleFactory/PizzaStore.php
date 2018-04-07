@@ -11,8 +11,13 @@ class PizzaStore
 {
     public function orderPizza($type)
     {
-        echo "ordering a pizza...\n";
+        echo "ordering a {$type} pizza...\n";
 
-        return (new PizzaFactory())->createPizza($type);
+        $pizza = (new PizzaFactory())->createPizza($type);
+
+        $pizza->prepare();
+        $pizza->bake();
+        $pizza->cut();
+        $pizza->box();
     }
 }

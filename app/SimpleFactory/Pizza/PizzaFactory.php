@@ -11,7 +11,7 @@ class PizzaFactory
         } elseif ($type === 'greek') {
             $pizza = new GreekPizza();
         } elseif ($type === 'pepperoni') {
-            $pizza = new PepperoniPizza;
+            $pizza = new PepperoniPizza();
         }
 
         return $pizza;

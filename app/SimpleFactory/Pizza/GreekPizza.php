@@ -16,11 +16,11 @@ class GreekPizza extends Pizza
 
     public function cut()
     {
-        "Cutting the greek pizza\n";
+        echo "Cutting the greek pizza\n";
     }
 
     public function box()
     {
-        "Boxing the greek pizza\n";
+        echo "Boxing the greek pizza\n";
     }
 }

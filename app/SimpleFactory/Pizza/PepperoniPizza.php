@@ -16,11 +16,11 @@ class PepperoniPizza extends Pizza
 
     public function cut()
     {
-        "Cutting the pepperoni pizza\n";
+        echo "Cutting the pepperoni pizza\n";
     }
 
     public function box()
     {
-        "Boxing the pepperoni pizza\n";
+        echo "Boxing the pepperoni pizza\n";
     }
 }

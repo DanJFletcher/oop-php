@@ -10,6 +10,6 @@ class Main
     {
         $pizzaStore = new PizzaStore();
 
-        $pizzaStore->orderPizza();
+        $pizzaStore->orderPizza('cheese');
     }
 }
