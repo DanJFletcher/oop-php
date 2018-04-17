@@ -2,13 +2,14 @@
 
 namespace App\FactoryMethod;
 
+use App\FactoryMethod\Pizza\Pizza;
 use App\FactoryMethod\Pizza\GreekPizza;
 use App\FactoryMethod\Pizza\CheesePizza;
 use App\FactoryMethod\Pizza\PepperoniPizza;
 
 abstract class PizzaStore
 {
-    abstract protected function createPizza($type);
+    abstract protected function createPizza(String $type) : Pizza;
 
     public function orderPizza($type)
     {
